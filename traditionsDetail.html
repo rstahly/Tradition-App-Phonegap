@@ -1,0 +1,30 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link">
+                <i class="icon icon-back"></i>
+                <span>Back</span>
+            </a>
+        </div>
+        <div class="center sliding">Traditions</div>
+    </div>
+</div>
+<div class="page" data-page="traditionsDetail">
+    <div class="page-content">
+        <div class="content-block less-padding-content">
+            <img src="" alt="" id="tradition-image">
+            <p id="tradition_title" class="detailInfo"></p>
+            <p class="detailHeader detailInfo">Summary</p>
+            <p id="tradition_summary" class="detailInfo"></p>
+            <p class="detailHeader detailInfo">Instructions</p>
+            <p id="tradition_instructions" class="detailInfo"></p>
+            <form id="completeTradForm" action="completeTradition.php" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="MAX_FILE_SIZE" value="2000000" id="MAX_FILE_SIZE">
+                <input type="file" name="photo" id="tradCompletePhoto">
+                <input type="hidden" name="traditionNumber" id="tradCompleteNum">
+                <input type="hidden" name="userName" id="tradCompleteUser">
+                <input type="submit" data-inline="true" id="completeTradButton" value="Complete Tradition">
+            </form>
+        </div>
+    </div>
+</div>

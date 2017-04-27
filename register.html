@@ -1,0 +1,35 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+        </div>
+        <div class="center sliding">Register</div>
+    </div>
+</div>
+<div class="page" data-page="register">
+    <div class="page-content">
+        <div class="content-block">
+            <p>Fill out the form to get started with using the app.</p>
+            <p><a href="login.html">Already have an account? Click here to log in</a></p>
+            <form id="registerForm" action="" method="POST">
+                <fieldset class="ui-field-contain ui-grid-a" id="registerFields">
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                    <input type="email" name="email" id="registerEmail" placeholder="Loper E-mail">
+                    <div class="ui-block-a gradRegister">
+                        <select name="gradMonth" id="gradMonth" data-native-menu="false">
+                            <option disabled selected>Est. Grad. Month</option>
+                            <option value="12">December</option>
+                            <option value="5">May</option>
+                            <option value="7">July</option>
+                        </select>
+                    </div>
+                    <div class="ui-block-b gradRegister">
+                        <input type="number" name="gradYear" id="gradYear" placeholder="Est. Grad Year">
+                    </div>
+                </fieldset>
+                <input type="submit" data-inline="true" id="registerButton" value="Register">
+            </form>
+        </div>
+    </div>
+</div>

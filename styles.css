@@ -1,0 +1,153 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+
+button {
+    margin-bottom: 15px;
+}
+
+#completeTradButton {
+    display: block;
+    padding: 5px 5px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.content-block {
+    margin-top: 10px;
+}
+
+.detailHeader {
+    background-color: #B3B3FF;
+}
+
+.detailInfo {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.even {
+    background-color: #F2F2F2;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.fa-fw {
+    width: 1.28571429em;
+    text-align: center;
+    padding-right: 10px;
+}
+
+#firstName, #lastName, #loginEmail, #registerEmail {
+    width: 100%;
+}
+
+#helpTable div.item-text {
+    margin: auto;
+}
+
+.homePageButtons {
+    padding: 5px 5px;
+    width: 150px !important;
+    font-size: 14px;
+    margin: 0 auto !important;
+}
+
+#home-img {
+    width: 100%;
+}
+
+.less-padding-content {
+    margin-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.list-group {
+    display: block;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 15px 15px;
+    margin-bottom: -1px;
+    border-bottom: 1px solid;
+    color: #B3B3B3;
+}
+
+.list-group-item:first-child {
+    border-top: 1px solid;
+}
+
+#loginButton {
+    display: block;
+    padding: 5px;
+    text-align: center;
+}
+
+#loginFields {
+    border-width: 0px;
+    margin-left: 0px;
+}
+
+#loginFields input, #loginFields select {
+    padding: 5px;
+}
+
+#map-canvas {
+    width: 100%;
+    height: 50%;
+}
+
+.odd {
+    background-color: #FFFFFF;
+}
+
+#president-picture {
+    width: 40%;
+}
+
+#registerButton {
+    display: block;
+    padding: 5px 5px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#registerFields {
+    border-width: 0px;
+    margin-left: 0px;
+}
+
+#registerFields input, #registerFields select {
+    padding: 5px;
+}
+
+.statusbar-overlay {
+    background: #000000;
+}
+
+#tradCompleteNum, #tradCompletePhoto, #tradCompleteUser {
+    display: none;
+}
+
+#tradition-image {
+    width: 100%;
+}
