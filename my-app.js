@@ -100,6 +100,7 @@ $$(document).on('pageInit', function (e) {
     if (page.name === 'traditionsList') {
         var tableList = '';
         var rowColor = 'odd';
+        var completed = '';
         
         $$.ajax({
             type: "POST",
@@ -113,11 +114,18 @@ $$(document).on('pageInit', function (e) {
                     } else {
                         rowColor = 'even';
                     }
+                    
+                    if (data.TraditionList[row].Completed == 1) {
+                        completed = ' completed';
+                    } else {
+                        completed = '';
+                    }
 
                     tableList += '<a id="' + row + '" ' 
                         + 'href="traditionsDetail.html" ' 
                         + 'onclick="return setDetail(this.id);">'
-                        + '<li class="item-content ' + rowColor + '">'
+                        + '<li class="item-content ' + rowColor 
+                        + completed + '">'
                         + '<div class="item-media">'
                         + '<img src="' 
                         + 'http://192.168.2.10/getThumbnail.php?traditionNumber=' + data.TraditionList[row].TraditionNumber
@@ -230,7 +238,6 @@ $$(document).on('pageInit', function (e) {
                     }
                     
                     function onFail(message) {
-                        alert('Failed because: ' + message);
                         alert('No picture was chosen! An picture must be chosen to complete the tradition.');
                     }
                }
